@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RMS.fragments.HomeFragment">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Home"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/cartbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cart" />
+
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Search Food..."
+            android:padding="16dp"
+            android:singleLine="true"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="5dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Main Course"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/all_menu_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/all_menu_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="44dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toStartOf="@+id/all_menu_image1"
+            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search"
+            app:srcCompat="@drawable/pizza"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/all_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Nasi Padang"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/all_menu_image"
+            app:layout_constraintStart_toStartOf="@+id/all_menu_image"
+            app:layout_constraintTop_toBottomOf="@+id/all_menu_image" />
+
+
+        <ImageView
+            android:id="@+id/all_menu_image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toStartOf="@+id/all_menu_image2"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:srcCompat="@drawable/pizza"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/all_menu_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Nasi Padang"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/all_menu_image1"
+            app:layout_constraintStart_toStartOf="@+id/all_menu_image1"
+            app:layout_constraintTop_toBottomOf="@+id/all_menu_image1" />
+
+        <ImageView
+            android:id="@+id/all_menu_image2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toStartOf="@+id/all_menu_image3"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:srcCompat="@drawable/pizza"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/all_menu_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Nasi Padang"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/all_menu_image2"
+            app:layout_constraintStart_toStartOf="@+id/all_menu_image2"
+            app:layout_constraintTop_toBottomOf="@+id/all_menu_image2" />
+
+
+        <ImageView
+            android:id="@+id/all_menu_image3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:srcCompat="@drawable/pizza"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/all_menu_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Nasi Padang"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/all_menu_image3"
+            app:layout_constraintStart_toStartOf="@+id/all_menu_image3"
+            app:layout_constraintTop_toBottomOf="@+id/all_menu_image3" />
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="24dp"
+            app:autoPlay="true"
+            app:fillColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/all_menu_image1"
+            app:pageColor="#000"
+            app:radius="6dp"
+            app:slideInterval="4000"
+            app:strokeColor="#ff777777"
+            app:strokeWidth="1dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Available Foods"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carouselView"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fooditemrecycler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/fooditemrecycler"
+            app:menu="@menu/bottomnav_menu"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

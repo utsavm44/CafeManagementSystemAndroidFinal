@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RMS.object.FoodDetailsActivity">
+
+    <TextView
+        android:id="@+id/fid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="103dp" />
+    <TextView
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/fprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="332dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <TextView
+        android:id="@+id/fdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="369dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <ImageView
+        android:id="@+id/fimage"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="412dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
